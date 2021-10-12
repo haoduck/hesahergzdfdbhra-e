@@ -10,7 +10,7 @@ unzip -o /tmp/${XRAY_FILE} "xray" "geoip.dat" "geosite.dat" -d ${XRAY_PATH} && r
 cat <<EOF > ${XRAY_PATH}config.json
 {
     "inbounds": [{
-        "port": 80,
+        "port": 8080,
         "protocol": "vmess",
         "settings": {
             "clients": [{
@@ -34,4 +34,4 @@ EOF
 if [[ ! -f ${XRAY_FILE} ]] || [[ ! -f ${XRAY_PATH}config.json ]];then
     down
 fi
-${XRAY_FILE} -c ${XRAY_PATH}config.json
+${XRAY_PATH}xray -c ${XRAY_PATH}config.json
