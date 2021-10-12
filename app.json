@@ -1,0 +1,18 @@
+{
+    "name": "hello",
+    "description": "Deploy hello on Heroku.",
+    "keywords": ["V2Ray"],
+    "env": {
+        "aaa": {
+            "description": "aaa",
+            "value": "aaaaaaaaa"
+        },
+        "hahaha": {
+            "description": "hahaha",
+            "value": "64"
+        }
+    },
+    "website": "https://1.1.1.1/",
+    "repository": "https://github.com/a/va",
+    "stack": "container"
+}
